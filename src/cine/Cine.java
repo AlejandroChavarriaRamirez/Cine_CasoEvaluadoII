@@ -4,17 +4,23 @@
  */
 package cine;
 
+import Controlador.CtrlPelicula;
+import Modelo.Pelicula;
+import Modelo.SentenciasPelicula;
+import Vista.frmPelicula;
 /**
  *
  * @author aleja
  */
+
 public class Cine {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Pelicula modelo = new Pelicula();
+        SentenciasPelicula consultas = new SentenciasPelicula();
+        frmPelicula vista = new frmPelicula();
+        CtrlPelicula controlador = new CtrlPelicula(modelo, consultas, vista);
+        controlador.inicio();
     }
-    
+
 }
