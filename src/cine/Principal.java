@@ -13,7 +13,7 @@ import Vista.frmPelicula;
  * @author aleja
  */
 
-public class Cine {
+public class Principal {
 
     public static void main(String[] args) {
         Pelicula modelo = new Pelicula();
